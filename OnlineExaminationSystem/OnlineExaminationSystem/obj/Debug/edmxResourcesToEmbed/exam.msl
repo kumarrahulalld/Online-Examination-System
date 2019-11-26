@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExamDBModelStoreContainer" CdmEntityContainer="ExamDBEntities">
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="ExamDBModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="ExamDBModel.Cours">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="faculties">
+      <EntityTypeMapping TypeName="ExamDBModel.faculty">
+        <MappingFragment StoreEntitySet="faculty">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Semesters">
+      <EntityTypeMapping TypeName="ExamDBModel.Semester">
+        <MappingFragment StoreEntitySet="Semesters">
+          <ScalarProperty Name="SemId" ColumnName="SemId" />
+          <ScalarProperty Name="SemName" ColumnName="SemName" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="ExamDBModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="EnrollmentNo" ColumnName="EnrollmentNo" />
+          <ScalarProperty Name="mob" ColumnName="mob" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Test_Details">
+      <EntityTypeMapping TypeName="ExamDBModel.Test_Details">
+        <MappingFragment StoreEntitySet="Test_Details">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Test_Id" ColumnName="Test_Id" />
+          <ScalarProperty Name="Total_Questions" ColumnName="Total_Questions" />
+          <ScalarProperty Name="Total_Marks" ColumnName="Total_Marks" />
+          <ScalarProperty Name="Correct_Mark" ColumnName="Correct_Mark" />
+          <ScalarProperty Name="Wrong_Mark" ColumnName="Wrong_Mark" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Passing_Mark" ColumnName="Passing_Mark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Results">
+      <EntityTypeMapping TypeName="ExamDBModel.Result">
+        <MappingFragment StoreEntitySet="Results">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="Semester" ColumnName="Semester" />
+          <ScalarProperty Name="Test_Id" ColumnName="Test_Id" />
+          <ScalarProperty Name="Marks_Obtained" ColumnName="Marks_Obtained" />
+          <ScalarProperty Name="Total_Marks" ColumnName="Total_Marks" />
+          <ScalarProperty Name="Attempted_Questions" ColumnName="Attempted_Questions" />
+          <ScalarProperty Name="Left_Questions" ColumnName="Left_Questions" />
+          <ScalarProperty Name="Wrong_Questions" ColumnName="Wrong_Questions" />
+          <ScalarProperty Name="Correct_Questions" ColumnName="Correct_Questions" />
+          <ScalarProperty Name="Submit_Time" ColumnName="Submit_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
